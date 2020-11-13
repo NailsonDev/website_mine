@@ -1,0 +1,7 @@
+#Config
+
+Use o config.php para configurar os dados do site, o mesmose aplica para o Banco de dados. 
+
+O sql vem junto com o nome -> mine.sql
+
+Devido a um certo cliente, o mesmo não compriu os termos então estou disponibilizando para todos esse projeto.

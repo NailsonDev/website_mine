@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {height: 100%;}
+body 
+{
+    background-image: url("../img/background.png");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container {max-width: 1000px; margin: 0 auto;}
+
+.clear {clear: both;}
+
+/* Estilo do site */
+header 
+{
+    width: 100%;
+    height: 60px;
+    background-color: #5a0689; /* Cor da Barra de navegação*/
+    border-bottom: 3px solid #750db1;
+}
+/*  */
+.logo a {text-decoration: none; float: left; font-size: 35px; font-weight:bold;font-family: Arial, Helvetica, sans-serif;margin-top: 10px;color: #fff;padding-left: 20px;}
+
+
+/* Estilo dos botões de navegação Modo: PC */
+.desktop-menu {float: right;margin-top: 20px;padding-right: 10px;}
+
+.desktop-menu li
+{
+    display: inline-block;
+    list-style: none;
+    margin: 0 7px;
+}
+.desktop-menu a 
+{
+    text-decoration: none;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+.mobile-menu {display: none;}
+.menu-icon {display: none;}
+/* Responsivo */
+
+@media screen and (max-width: 839px)
+{
+    .desktop-menu 
+    {
+        display: none;
+    }
+    .mobile-menu 
+    {
+
+        text-align: center;
+        width: 100%;
+        height:100px;
+        background-color: #5a0689;
+        z-index: 999;
+        position: relative;
+    }
+    .mobile-menu li 
+    {
+        list-style: none;
+        margin: 5px 0;
+    }
+    .mobile-menu a 
+    {
+        text-decoration: none;
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fff;
+    }
+    .mobile-menu a:hover 
+    {
+        text-decoration: underline;
+    }
+    .menu-icon 
+    {
+        display: block;
+        float: right;
+        margin: -35px 30px;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.rede-icon 
+{
+    float: right;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 16px;
+
+}
+
+.rede-icon button
+{
+    color: #fff;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    background-color: #7923aa;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+
+}
+
+.rede-icon p:nth-child(3)
+{
+    color: rgba(255, 255, 255, 0.726);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+.rede-icon a img 
+{
+    width: 50px;
+}
+/*  */
+.center 
+{
+    max-width: 300px; 
+    margin: 0 auto;
+}
+.logo-icon img
+{
+    width: 300px;
+    position: relative;
+    top: -100px;
+    transition: .5s;
+}
+
+.logo-icon img:hover 
+{
+    transform: scale(1.1);
+}
+/*  */
+
+.box-content 
+{
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    background-color: rgb(212, 212, 212);
+    padding-top: 50px;
+    
+}
+
+/* Responsivo do background */
+
+@media screen and (max-width: 839px) 
+{
+    .center 
+    {
+        max-width: 220px; 
+        margin: 0 auto;
+    }
+    .rede-icon
+    {
+        display: none;
+    }
+    .logo-icon img
+    {
+        position: relative;
+        top: 10px;
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+}
+/*  */
+.box-content > .container 
+{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.welcome 
+{
+    width: 67%;
+    background-color: #750db1;
+    border-radius:  5px 5px 0px 0px;
+    float: left;
+  
+}
+.welcome h2 
+{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 15px 10px;
+}
+.fique-por-dentro
+{
+    width: 30%;
+    background-color: #750db1;
+    border-radius:  5px 5px 0px 0px;
+    float: right;
+}
+.post-content 
+{
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    height: auto;
+    line-height: 23px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400px;
+    font-size: 14px;
+    color: #000000c0;
+}
+
+.post-content > p 
+{
+    margin: 20px 0;
+}
+.fique-por-dentro h2 
+{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding: 15px 10px;
+    text-align: center;
+}
+.redes-content 
+{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000c0;
+}
+/* Responsivo  */
+
+@media screen and (max-width: 608px)
+{
+    .welcome 
+    {
+        float: none;
+        width: 100%;
+
+    }
+    .fique-por-dentro
+    {
+        float: none;
+        margin-top: 40px;
+        width: 100%;
+    }
+}
+
+
+.footer 
+{
+    background-color: #9327d1;
+    width: 100%;
+    padding: 10px;
+    height: auto;
+    text-align: center;
+
+}
+
+.footer h2 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #fff;
+}
+.footer p 
+{
+    font-size: 12px;
+    color: #ffffffbe;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Equipe */
+
+.box-equipe-top 
+{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(197, 31, 31);
+    margin-bottom: 80px;
+}
+.box-equipe-top h3 
+{
+    padding: 5px;
+    color: #ffffffcb;
+}
+
+.color-red {background-color: rgb(177, 8, 8); border-bottom: 2px solid rgb(94, 3, 3);}
+.color-red-claro {background-color: rgb(255, 67, 67); border-bottom: 2px solid rgb(190, 17, 17);}
+.color-purple-forte {background-color: rgb(126, 6, 163); border-bottom: 2px solid rgb(63, 8, 99);}
+.color-purple-claro {background-color: rgb(167, 21, 211); border-bottom: 2px solid rgb(120, 16, 189);}
+.color-rosa {background-color: rgb(216, 6, 205); border-bottom: 2px solid rgb(179, 7, 164);}
+.color-cian {background-color: rgb(19, 116, 180); border-bottom: 2px solid rgb(10, 92, 129);}
+
+.perfil-equipe 
+{
+    width: 100px;
+    text-align: center;
+    float: left;
+    margin-top: 15px;
+    position: relative;
+    top: -80px;
+
+}
+.perfil-equipe img {border-radius: 5px;}
+.perfil-equipe p 
+{
+    font-size: 13px;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  td, th {
+	border: 1px solid rgba(204, 204, 204, 0.288);
+	text-align: left;
+	padding: 8px;
+  }
+  
+  tr:nth-child(1)
+  {
+      background-color: rgb(120, 16, 189);
+      color:#fff;
+  }
+ 
+  tr:nth-child(even)
+  {
+      background-color: rgba(204, 204, 204, 0.288);
+  }
+  th p 
+  {
+      display: inline-block;
+      position: relative;
+      top: -10px;
+  }
+  /* Contato */
+
+.post-content > form > input 
+{
+    display: block;
+}
+
+.post-content > form > input[type="text"], 
+.post-content > form > input[type="email"]
+{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    outline: none;
+}
+.post-content > form > textarea 
+{
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    resize: vertical;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post-content > form > input[type="submit"]
+{
+    float: right;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(12, 189, 12);
+    color: #fff;
+}
+
+.post
+{
+   display: flex;
+   padding-bottom: 20px;
+   widows: 100%;
+   padding: 5px;
+   height: 77px;
+   border-radius: 5px;
+   background-color: #7923aa;
+}
+
+.post-image img 
+{
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+}
+.post-by 
+{
+    margin: 10px;
+}
+.post-by p 
+{
+    color: #fff;
+}
+/* Ultimas noticias */
+
+.ultimas-noticias 
+{
+    background-color: #8c11d3;
+    widows: 100%;
+    height: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.ultimas-noticias img 
+{
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+.ultimas-noticias a 
+{
+    float: left;
+    margin: 7px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.bar-ultimas 
+{
+    widows: 100%;
+    height: 35px;
+    background-color: #750db1;
+    border-radius: 5px;
+    margin-bottom: 13px;
+}
+.bar-ultimas:hover 
+{
+    transition: 0.3s;
+    background-color: #b14eeb;
+    cursor: pointer;
+}
+
+.twiiter-time
+{
+    widows: 100%;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.alert 
+{
+    width: 100%;
+    height: auto;
+    font-size: 13px;
+    color: #fff;
+    padding: 5px;
+    font-weight: bold;
+}
+.color-error {background-color: rgb(241, 48, 48);}
+.color-sucesso {background-color: rgb(6, 233, 25);}
+
+.novidades-ultra 
+{
+
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.692);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 40px;
+}
